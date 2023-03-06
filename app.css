@@ -1,0 +1,103 @@
+html , body  {
+    margin: 0;
+    height: 100vh;
+}
+#background{
+    background-color: grey;
+    height: 100%;
+    width: 100%;
+}
+#card{
+    background-color: white;
+    height: 40.5rem;
+    width: 76.5rem;
+    position:relative;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#card>.panel{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+}
+#card>.panel>.button{
+    height: 10%;
+}
+#card>.panel>.image{
+    height: 25%;
+}
+.button>img{
+    position: relative;
+    left: 10%;
+}
+.button>p{
+    display: inline-block;
+    position: relative;
+    left: 15%;
+    top: -25%;
+    letter-spacing: 2px;
+
+}
+.image >img{
+    height: 120px;
+    width: 120px;
+    position: relative;
+    top:50% ;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+}
+
+
+#card>.page{
+    width:70%;
+    height: 100%;
+    position: relative;
+    top:-100%;
+    left: 30%;
+    background-color: rgb(255, 255, 255);
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+h2{
+    margin: 0;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+.page>form{
+    display: grid;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(4,1fr) ;
+    background-color: rgb(255, 255, 255);
+    height: 75%;
+    width: 85%;
+    position:relative;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: large;
+}
+label{
+    display: block;
+    padding-bottom: 2px;
+    padding-left:6%
+}
+input{
+    border: 2px solid;
+    border-color: brown;
+    width: 90%;
+    height: 40%;
+    border-radius: 12px;
+}
+button{
+    height: 32%;
+    width: 92%;
+    border-radius: 12px;
+    font-size: medium;
+}
