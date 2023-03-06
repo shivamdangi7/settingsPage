@@ -3,26 +3,36 @@ html , body  {
     height: 100vh;
 }
 #background{
-    background-color: grey;
+    background-color: #E9EEF6;
     height: 100%;
     width: 100%;
 }
 #card{
-    background-color: white;
+    background-color: transparent;
     height: 40.5rem;
     width: 76.5rem;
     position:relative;
     top:50% ;
     left: 50%;
     transform: translate(-50% , -50%);
+
+   
 }
 #card>.panel{
     width: 30%;
     height: 100%;
-    background-color: aqua;
+    background-color: #3A001E;
     border-radius: 35px;
     display: flex;
     flex-direction: column;
+    color:white;
+    font-weight: bold;
+    position: absolute;
+    left: 2.25%;
+    z-index: 1;
+    /* border-right: 5px solid red; */
+    box-shadow: 8px 0px 0px 0px rgba(128,0,0,0.6);
+
 }
 #card>.panel>.button{
     height: 10%;
@@ -53,15 +63,18 @@ html , body  {
 }
 
 
+
+
 #card>.page{
     width:70%;
     height: 100%;
     position: relative;
-    top:-100%;
+    
     left: 30%;
-    background-color: rgb(255, 255, 255);
+    background-color: #F5E4E3;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
+    box-shadow: inset 0px 1px 1px 0px rgba(255, 255, 255, 0.1), 0px 50px 100px -20px rgba(50, 50, 93, 0.25), 0px 30px 60px -30px rgba(0, 0, 0, 0.3);
 }
 
 h2{
@@ -74,7 +87,7 @@ h2{
     display: grid;
     grid-template-columns:repeat(3,1fr) ;
     grid-template-rows:repeat(4,1fr) ;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     height: 75%;
     width: 85%;
     position:relative;
@@ -94,10 +107,21 @@ input{
     width: 90%;
     height: 40%;
     border-radius: 12px;
+    transition: background-color 400ms;
+}
+input:hover{
+    border: 3px solid maroon;
 }
 button{
-    height: 32%;
+    height: 35%;
     width: 92%;
     border-radius: 12px;
     font-size: medium;
+    border: none;
+    background-color: #3A001E;
+    color: white;
+    transition: background-color 400ms;
+}
+button:hover{
+    background-color: #8f1654;
 }
