@@ -32,6 +32,8 @@ html , body  {
     z-index: 1;
     /* border-right: 5px solid red; */
     box-shadow: 8px 0px 0px 0px rgba(128,0,0,0.6);
+    /* font-family: 'Raleway', sans-serif; */
+font-family: 'Roboto Mono', monospace;
 
 }
 #card>.panel>.button{
@@ -80,8 +82,13 @@ html , body  {
 h2{
     margin: 0;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 5%;
+    position: relative;
+    top:6%;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 1px;
+    /* font-family: 'Roboto Mono', monospace; */
+    
 }
 .page>form{
     display: grid;
@@ -99,7 +106,9 @@ h2{
 label{
     display: block;
     padding-bottom: 2px;
-    padding-left:6%
+    padding-left:6%;
+    font-family: 'Raleway', sans-serif;
+/* font-family: 'Roboto Mono', monospace; */
 }
 input{
     border: 2px solid;
@@ -121,6 +130,8 @@ button{
     background-color: #3A001E;
     color: white;
     transition: background-color 400ms;
+    /* font-family: 'Raleway', sans-serif; */
+font-family: 'Roboto Mono', monospace;
 }
 button:hover{
     background-color: #8f1654;
